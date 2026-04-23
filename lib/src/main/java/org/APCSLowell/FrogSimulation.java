@@ -18,6 +18,7 @@ public class FrogSimulation {
        int jumps= 0;
        while(jumps<maxHops){
         dist+=hopDistance();
+        jumps++;
         if(dist<0)
             return false;
         else if(dist>=goalDistance)
